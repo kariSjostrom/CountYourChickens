@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FC339EE1BDED35A002520AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC339ED1BDED35A002520AB /* AppDelegate.swift */; };
+		4FC339F01BDED35A002520AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC339EF1BDED35A002520AB /* ViewController.swift */; };
+		4FC339F31BDED35A002520AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC339F11BDED35A002520AB /* Main.storyboard */; };
+		4FC339F61BDED35B002520AB /* CountYourChickens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FC339F41BDED35B002520AB /* CountYourChickens.xcdatamodeld */; };
+		4FC339F81BDED35B002520AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC339F71BDED35B002520AB /* Assets.xcassets */; };
+		4FC339FB1BDED35B002520AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC339F91BDED35B002520AB /* LaunchScreen.storyboard */; };
+		4FC33A041BDEE5B3002520AB /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A031BDEE5B3002520AB /* BalanceTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A061BDEE5CD002520AB /* SavingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A051BDEE5CD002520AB /* SavingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A081BDEE5E2002520AB /* SpendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A071BDEE5E2002520AB /* SpendingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A0A1BDEE5FB002520AB /* IncomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A091BDEE5FB002520AB /* IncomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A0C1BDEE663002520AB /* TotalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0B1BDEE663002520AB /* TotalTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A0E1BDEF724002520AB /* ExternalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A111BDF0692002520AB /* Ledger+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0F1BDF0692002520AB /* Ledger+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A121BDF0692002520AB /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A101BDF0692002520AB /* Ledger.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FC339EA1BDED35A002520AB /* CountYourChickens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountYourChickens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC339ED1BDED35A002520AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FC339EF1BDED35A002520AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FC339F21BDED35A002520AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FC339F51BDED35B002520AB /* CountYourChickens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CountYourChickens.xcdatamodel; sourceTree = "<group>"; };
+		4FC339F71BDED35B002520AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FC339FA1BDED35B002520AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FC339FC1BDED35B002520AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC33A031BDEE5B3002520AB /* BalanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A051BDEE5CD002520AB /* SavingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A071BDEE5E2002520AB /* SpendingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A091BDEE5FB002520AB /* IncomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A0B1BDEE663002520AB /* TotalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalInformationViewController.swift; sourceTree = "<group>"; };
+		4FC33A0F1BDF0692002520AB /* Ledger+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ledger+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4FC33A101BDF0692002520AB /* Ledger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ledger.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FC339E71BDED35A002520AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FC339E11BDED35A002520AB = {
+			isa = PBXGroup;
+			children = (
+				4FC33A0F1BDF0692002520AB /* Ledger+CoreDataProperties.swift */,
+				4FC33A101BDF0692002520AB /* Ledger.swift */,
+				4FC33A021BDEE563002520AB /* Pages */,
+				4FC339EC1BDED35A002520AB /* CountYourChickens */,
+				4FC339EB1BDED35A002520AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FC339EB1BDED35A002520AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FC339EA1BDED35A002520AB /* CountYourChickens.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FC339EC1BDED35A002520AB /* CountYourChickens */ = {
+			isa = PBXGroup;
+			children = (
+				4FC339ED1BDED35A002520AB /* AppDelegate.swift */,
+				4FC339EF1BDED35A002520AB /* ViewController.swift */,
+				4FC339F11BDED35A002520AB /* Main.storyboard */,
+				4FC339F71BDED35B002520AB /* Assets.xcassets */,
+				4FC339F91BDED35B002520AB /* LaunchScreen.storyboard */,
+				4FC339FC1BDED35B002520AB /* Info.plist */,
+				4FC339F41BDED35B002520AB /* CountYourChickens.xcdatamodeld */,
+			);
+			path = CountYourChickens;
+			sourceTree = "<group>";
+		};
+		4FC33A021BDEE563002520AB /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				4FC33A031BDEE5B3002520AB /* BalanceTableViewController.swift */,
+				4FC33A051BDEE5CD002520AB /* SavingTableViewController.swift */,
+				4FC33A071BDEE5E2002520AB /* SpendingTableViewController.swift */,
+				4FC33A091BDEE5FB002520AB /* IncomeTableViewController.swift */,
+				4FC33A0B1BDEE663002520AB /* TotalTableViewController.swift */,
+				4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FC339E91BDED35A002520AB /* CountYourChickens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FC339FF1BDED35B002520AB /* Build configuration list for PBXNativeTarget "CountYourChickens" */;
+			buildPhases = (
+				4FC339E61BDED35A002520AB /* Sources */,
+				4FC339E71BDED35A002520AB /* Frameworks */,
+				4FC339E81BDED35A002520AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountYourChickens;
+			productName = CountYourChickens;
+			productReference = 4FC339EA1BDED35A002520AB /* CountYourChickens.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FC339E21BDED35A002520AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rock Valley College";
+				TargetAttributes = {
+					4FC339E91BDED35A002520AB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 4FC339E51BDED35A002520AB /* Build configuration list for PBXProject "CountYourChickens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FC339E11BDED35A002520AB;
+			productRefGroup = 4FC339EB1BDED35A002520AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FC339E91BDED35A002520AB /* CountYourChickens */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FC339E81BDED35A002520AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC339FB1BDED35B002520AB /* LaunchScreen.storyboard in Resources */,
+				4FC339F81BDED35B002520AB /* Assets.xcassets in Resources */,
+				4FC339F31BDED35A002520AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FC339E61BDED35A002520AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC33A041BDEE5B3002520AB /* BalanceTableViewController.swift in Sources */,
+				4FC339F01BDED35A002520AB /* ViewController.swift in Sources */,
+				4FC33A0A1BDEE5FB002520AB /* IncomeTableViewController.swift in Sources */,
+				4FC339F61BDED35B002520AB /* CountYourChickens.xcdatamodeld in Sources */,
+				4FC33A0C1BDEE663002520AB /* TotalTableViewController.swift in Sources */,
+				4FC33A121BDF0692002520AB /* Ledger.swift in Sources */,
+				4FC339EE1BDED35A002520AB /* AppDelegate.swift in Sources */,
+				4FC33A0E1BDEF724002520AB /* ExternalInformationViewController.swift in Sources */,
+				4FC33A061BDEE5CD002520AB /* SavingTableViewController.swift in Sources */,
+				4FC33A111BDF0692002520AB /* Ledger+CoreDataProperties.swift in Sources */,
+				4FC33A081BDEE5E2002520AB /* SpendingTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FC339F11BDED35A002520AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FC339F21BDED35A002520AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FC339F91BDED35B002520AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FC339FA1BDED35B002520AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FC339FD1BDED35B002520AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4FC339FE1BDED35B002520AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FC33A001BDED35B002520AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CountYourChickens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rockvalleycollege.CountYourChickens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FC33A011BDED35B002520AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CountYourChickens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rockvalleycollege.CountYourChickens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FC339E51BDED35A002520AB /* Build configuration list for PBXProject "CountYourChickens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FC339FD1BDED35B002520AB /* Debug */,
+				4FC339FE1BDED35B002520AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FC339FF1BDED35B002520AB /* Build configuration list for PBXNativeTarget "CountYourChickens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FC33A001BDED35B002520AB /* Debug */,
+				4FC33A011BDED35B002520AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FC339F41BDED35B002520AB /* CountYourChickens.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FC339F51BDED35B002520AB /* CountYourChickens.xcdatamodel */,
+			);
+			currentVersion = 4FC339F51BDED35B002520AB /* CountYourChickens.xcdatamodel */;
+			path = CountYourChickens.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4FC339E21BDED35A002520AB /* Project object */;
+}
