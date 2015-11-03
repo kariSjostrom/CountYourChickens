@@ -2,7 +2,7 @@
 //  BalanceTableViewController.swift
 //  CountYourChickens
 //
-//  Created by Karissa the Squid on 10/26/15.
+//  Created by Karissa the Squid on 10/27/15.
 //  Copyright © 2015 Rock Valley College. All rights reserved.
 //
 

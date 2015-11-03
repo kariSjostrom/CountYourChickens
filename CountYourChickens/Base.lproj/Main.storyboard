@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Preferences View Controller-->
         <scene sceneID="tLs-LQ-Uco">
             <objects>
-                <viewController id="8Fw-Hh-frL" sceneMemberID="viewController">
+                <viewController id="8Fw-Hh-frL" customClass="PreferencesViewController" customModule="CountYourChickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pUn-Ig-txt"/>
                         <viewControllerLayoutGuide type="bottom" id="BA3-Kv-PS7"/>
@@ -15,13 +15,94 @@
                     <view key="view" contentMode="scaleToFill" id="MWB-tX-uxI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-94-h98">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="User Preferences" id="XvJ-5S-a71">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="l0j-dx-nVg"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftO-0Q-jMo">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Save" id="rKp-0r-80b"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Am-ha-pqs">
+                                <rect key="frame" x="147" y="95" width="306" height="410"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqw-Dx-wQE">
+                                        <rect key="frame" x="-7" y="119" width="320" height="216"/>
+                                        <animations/>
+                                    </pickerView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqz-8y-IpP">
+                                        <rect key="frame" x="50" y="8" width="207" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGr-wv-txF">
+                                        <rect key="frame" x="50" y="46" width="207" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibc-f0-PEt">
+                                        <rect key="frame" x="198" y="319" width="34" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="btnSave:" destination="8Fw-Hh-frL" eventType="touchUpInside" id="oC2-ml-fMS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXD-Q0-Cxi">
+                                        <rect key="frame" x="74" y="319" width="36" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="btnClear:" destination="8Fw-Hh-frL" eventType="touchUpInside" id="uCH-bm-2H2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-8y-hIH">
+                                        <rect key="frame" x="136" y="319" width="34" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="btnLoad:" destination="8Fw-Hh-frL" eventType="touchUpInside" id="dZJ-VI-JTq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Profile Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdD-8M-EOA">
+                                        <rect key="frame" x="71" y="128" width="165" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Color" destination="mqw-Dx-wQE" id="c6h-6O-3mB"/>
+                        <outlet property="MyColor" destination="mqw-Dx-wQE" id="NgR-FB-Osa"/>
+                        <outlet property="MyColors" destination="mqw-Dx-wQE" id="9ZH-Qb-uXx"/>
+                        <outlet property="btnClear" destination="bXD-Q0-Cxi" id="0n4-e4-NHW"/>
+                        <outlet property="btnSave" destination="Ibc-f0-PEt" id="AYP-0y-MJ8"/>
+                        <outlet property="txtBank" destination="jGr-wv-txF" id="V4q-pI-lGa"/>
+                        <outlet property="txtName" destination="Jqz-8y-IpP" id="dkn-6r-x5p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOK-XX-wnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-282" y="332"/>
+            <point key="canvasLocation" x="-31" y="327"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -40,6 +121,11 @@
                                 <animations/>
                                 <items>
                                     <navigationItem title="Count Your Chickens" id="4PX-Ub-NjC">
+                                        <barButtonItem key="leftBarButtonItem" title="Edit Profile" id="rYk-mU-veA">
+                                            <connections>
+                                                <segue destination="8Fw-Hh-frL" kind="presentation" id="ZSP-4k-IMS"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="IUm-GS-ezk">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="IRy-9W-B4g">
                                                 <rect key="frame" x="558" y="11" width="22" height="22"/>
@@ -47,7 +133,7 @@
                                                 <animations/>
                                             </button>
                                             <connections>
-                                                <segue destination="e0n-bC-g60" kind="presentation" id="8vc-w1-JNc"/>
+                                                <segue destination="e0n-bC-g60" kind="presentation" identifier="webview" id="8vc-w1-JNc"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -103,35 +189,35 @@
                                     <constraint firstAttribute="width" constant="42" id="GCw-st-caE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37c-DO-jFe">
                                 <rect key="frame" x="336" y="185" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-9j-N0I">
                                 <rect key="frame" x="336" y="239" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5i-HK-l5W">
                                 <rect key="frame" x="336" y="294" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya7-tx-jpi">
                                 <rect key="frame" x="224" y="80" width="43" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwA-lk-usg">
@@ -141,7 +227,7 @@
                                     <constraint firstAttribute="width" constant="46" id="qij-sK-feE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-xx-Z57">
@@ -205,10 +291,10 @@
             </objects>
             <point key="canvasLocation" x="693" y="306"/>
         </scene>
-        <!--View Controller-->
+        <!--Total Table View Controller-->
         <scene sceneID="8CF-V6-pHJ">
             <objects>
-                <viewController id="Wo5-4z-0MG" sceneMemberID="viewController">
+                <viewController id="Wo5-4z-0MG" customClass="TotalTableViewController" customModule="CountYourChickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZPN-gE-FIN"/>
                         <viewControllerLayoutGuide type="bottom" id="9l8-fM-txm"/>
@@ -238,7 +324,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableFooterView" contentMode="redraw" id="n2z-Zi-jyG">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="440" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <textInputTraits key="textInputTraits"/>
@@ -251,12 +337,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SnC-J8-rb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="259"/>
+            <point key="canvasLocation" x="1567" y="314"/>
         </scene>
-        <!--View Controller-->
+        <!--Spending Table View Controller-->
         <scene sceneID="KuV-zX-0eg">
             <objects>
-                <viewController id="VJ5-z7-QUB" sceneMemberID="viewController">
+                <viewController id="VJ5-z7-QUB" customClass="SpendingTableViewController" customModule="CountYourChickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iCj-JY-7ln"/>
                         <viewControllerLayoutGuide type="bottom" id="26b-Rx-ani"/>
@@ -299,12 +385,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRm-Wg-XNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090" y="-312"/>
+            <point key="canvasLocation" x="1094" y="-431"/>
         </scene>
-        <!--View Controller-->
+        <!--Income Table View Controller-->
         <scene sceneID="wIj-1Z-1YC">
             <objects>
-                <viewController id="KHD-Og-ZgQ" sceneMemberID="viewController">
+                <viewController id="KHD-Og-ZgQ" customClass="IncomeTableViewController" customModule="CountYourChickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KTb-6w-b3j"/>
                         <viewControllerLayoutGuide type="bottom" id="R7w-Z3-GhH"/>
@@ -397,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="1679" y="976"/>
         </scene>
-        <!--View Controller-->
+        <!--Balance Table View Controller-->
         <scene sceneID="zgC-Cf-i4R">
             <objects>
-                <viewController id="sSS-Hn-zL9" sceneMemberID="viewController">
+                <viewController id="sSS-Hn-zL9" customClass="BalanceTableViewController" customModule="CountYourChickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dvs-hE-oYi"/>
                         <viewControllerLayoutGuide type="bottom" id="CRR-nv-ile"/>
@@ -435,6 +521,9 @@
                                     <animations/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
+                                <connections>
+                                    <outlet property="delegate" destination="sSS-Hn-zL9" id="1Bd-tq-1hc"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -443,12 +532,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBp-NB-6OJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="-365"/>
+            <point key="canvasLocation" x="328" y="-466"/>
         </scene>
-        <!--View Controller-->
+        <!--Saving Table View Controller-->
         <scene sceneID="JeK-c7-bTm">
             <objects>
-                <viewController id="Cki-nE-WTe" sceneMemberID="viewController">
+                <viewController id="Cki-nE-WTe" customClass="SavingTableViewController" customModule="CountYourChickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eZ7-S4-1RP"/>
                         <viewControllerLayoutGuide type="bottom" id="yBY-kY-Byw"/>

@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA821AD1BE138CC00B9A10A /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821AC1BE138CC00B9A10A /* PreferencesViewController.swift */; };
 		4FC339EE1BDED35A002520AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC339ED1BDED35A002520AB /* AppDelegate.swift */; };
 		4FC339F01BDED35A002520AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC339EF1BDED35A002520AB /* ViewController.swift */; };
 		4FC339F31BDED35A002520AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC339F11BDED35A002520AB /* Main.storyboard */; };
 		4FC339F61BDED35B002520AB /* CountYourChickens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FC339F41BDED35B002520AB /* CountYourChickens.xcdatamodeld */; };
 		4FC339F81BDED35B002520AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC339F71BDED35B002520AB /* Assets.xcassets */; };
 		4FC339FB1BDED35B002520AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC339F91BDED35B002520AB /* LaunchScreen.storyboard */; };
-		4FC33A041BDEE5B3002520AB /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A031BDEE5B3002520AB /* BalanceTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A061BDEE5CD002520AB /* SavingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A051BDEE5CD002520AB /* SavingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A081BDEE5E2002520AB /* SpendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A071BDEE5E2002520AB /* SpendingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A0A1BDEE5FB002520AB /* IncomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A091BDEE5FB002520AB /* IncomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A0C1BDEE663002520AB /* TotalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0B1BDEE663002520AB /* TotalTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A0E1BDEF724002520AB /* ExternalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A111BDF0692002520AB /* Ledger+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0F1BDF0692002520AB /* Ledger+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		4FC33A121BDF0692002520AB /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A101BDF0692002520AB /* Ledger.swift */; settings = {ASSET_TAGS = (); }; };
+		4FC33A0E1BDEF724002520AB /* ExternalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */; };
+		4FC33A111BDF0692002520AB /* Ledger+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A0F1BDF0692002520AB /* Ledger+CoreDataProperties.swift */; };
+		4FC33A121BDF0692002520AB /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A101BDF0692002520AB /* Ledger.swift */; };
+		4FC33A141BDFC44B002520AB /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A131BDFC44B002520AB /* BalanceTableViewController.swift */; };
+		4FC33A161BDFC486002520AB /* SpendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A151BDFC486002520AB /* SpendingTableViewController.swift */; };
+		4FC33A181BDFC4D8002520AB /* TotalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A171BDFC4D8002520AB /* TotalTableViewController.swift */; };
+		4FC33A1A1BDFC53F002520AB /* IncomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A191BDFC53F002520AB /* IncomeTableViewController.swift */; };
+		4FC33A1C1BDFC571002520AB /* SavingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC33A1B1BDFC571002520AB /* SavingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA821AC1BE138CC00B9A10A /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		4FC339EA1BDED35A002520AB /* CountYourChickens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountYourChickens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC339ED1BDED35A002520AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC339EF1BDED35A002520AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,14 +34,14 @@
 		4FC339F71BDED35B002520AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FC339FA1BDED35B002520AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FC339FC1BDED35B002520AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FC33A031BDEE5B3002520AB /* BalanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
-		4FC33A051BDEE5CD002520AB /* SavingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingTableViewController.swift; sourceTree = "<group>"; };
-		4FC33A071BDEE5E2002520AB /* SpendingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingTableViewController.swift; sourceTree = "<group>"; };
-		4FC33A091BDEE5FB002520AB /* IncomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeTableViewController.swift; sourceTree = "<group>"; };
-		4FC33A0B1BDEE663002520AB /* TotalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalTableViewController.swift; sourceTree = "<group>"; };
 		4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalInformationViewController.swift; sourceTree = "<group>"; };
 		4FC33A0F1BDF0692002520AB /* Ledger+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ledger+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4FC33A101BDF0692002520AB /* Ledger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ledger.swift; sourceTree = "<group>"; };
+		4FC33A131BDFC44B002520AB /* BalanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A151BDFC486002520AB /* SpendingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A171BDFC4D8002520AB /* TotalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A191BDFC53F002520AB /* IncomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeTableViewController.swift; sourceTree = "<group>"; };
+		4FC33A1B1BDFC571002520AB /* SavingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +91,13 @@
 		4FC33A021BDEE563002520AB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				4FC33A031BDEE5B3002520AB /* BalanceTableViewController.swift */,
-				4FC33A051BDEE5CD002520AB /* SavingTableViewController.swift */,
-				4FC33A071BDEE5E2002520AB /* SpendingTableViewController.swift */,
-				4FC33A091BDEE5FB002520AB /* IncomeTableViewController.swift */,
-				4FC33A0B1BDEE663002520AB /* TotalTableViewController.swift */,
 				4FC33A0D1BDEF724002520AB /* ExternalInformationViewController.swift */,
+				4FC33A131BDFC44B002520AB /* BalanceTableViewController.swift */,
+				4FC33A151BDFC486002520AB /* SpendingTableViewController.swift */,
+				4FC33A171BDFC4D8002520AB /* TotalTableViewController.swift */,
+				4FC33A191BDFC53F002520AB /* IncomeTableViewController.swift */,
+				4FC33A1B1BDFC571002520AB /* SavingTableViewController.swift */,
+				4FA821AC1BE138CC00B9A10A /* PreferencesViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -169,17 +172,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC33A041BDEE5B3002520AB /* BalanceTableViewController.swift in Sources */,
 				4FC339F01BDED35A002520AB /* ViewController.swift in Sources */,
-				4FC33A0A1BDEE5FB002520AB /* IncomeTableViewController.swift in Sources */,
+				4FC33A141BDFC44B002520AB /* BalanceTableViewController.swift in Sources */,
 				4FC339F61BDED35B002520AB /* CountYourChickens.xcdatamodeld in Sources */,
-				4FC33A0C1BDEE663002520AB /* TotalTableViewController.swift in Sources */,
+				4FC33A161BDFC486002520AB /* SpendingTableViewController.swift in Sources */,
+				4FC33A1A1BDFC53F002520AB /* IncomeTableViewController.swift in Sources */,
 				4FC33A121BDF0692002520AB /* Ledger.swift in Sources */,
 				4FC339EE1BDED35A002520AB /* AppDelegate.swift in Sources */,
+				4FC33A1C1BDFC571002520AB /* SavingTableViewController.swift in Sources */,
 				4FC33A0E1BDEF724002520AB /* ExternalInformationViewController.swift in Sources */,
-				4FC33A061BDEE5CD002520AB /* SavingTableViewController.swift in Sources */,
+				4FC33A181BDFC4D8002520AB /* TotalTableViewController.swift in Sources */,
 				4FC33A111BDF0692002520AB /* Ledger+CoreDataProperties.swift in Sources */,
-				4FC33A081BDEE5E2002520AB /* SpendingTableViewController.swift in Sources */,
+				4FA821AD1BE138CC00B9A10A /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
